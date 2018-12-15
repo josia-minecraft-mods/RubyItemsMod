@@ -1,7 +1,7 @@
 package com.util;
 
 public class Reference {
-    public static final String NAME = "Main Mod";
+    public static final String NAME = "Fun Josia Mod";
     public static final String VERSION = "1.0.0";
     public static final String MODID = "jm";
 

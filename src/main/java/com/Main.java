@@ -1,5 +1,6 @@
 package com;
 
+import com.init.ModRecipes;
 import com.util.Reference;
 import com.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -30,7 +31,7 @@ public class Main
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent event)
     {
-
+        ModRecipes.init();
     }
 
     @Mod.EventHandler
