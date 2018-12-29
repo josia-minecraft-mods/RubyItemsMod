@@ -5,8 +5,8 @@ import net.minecraft.block.material.Material;
 
 public class RubyBlock extends BlockBase {
 
-    public RubyBlock(String name, Material material) {
-        super(name, material);
+    public RubyBlock(String name) {
+        super(name);
 
         setSoundType(SoundType.METAL);
         setHardness(5.0F);

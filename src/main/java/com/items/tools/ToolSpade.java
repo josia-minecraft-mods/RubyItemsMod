@@ -2,6 +2,7 @@ package com.items.tools;
 
 import com.Main;
 import com.init.ModItems;
+import com.tabs.FunTabs;
 import com.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -14,7 +15,7 @@ public class ToolSpade extends ItemSpade implements IHasModel
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(FunTabs.funtools);
 
         ModItems.ITEMS.add(this);
     }

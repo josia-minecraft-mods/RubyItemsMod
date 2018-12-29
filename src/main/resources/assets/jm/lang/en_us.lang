@@ -18,5 +18,11 @@ item.ruby_chestplate.name=Ruby Chestplate
 item.ruby_leggings.name=Ruby Leggings
 item.ruby_boots.name=Ruby Boots
 
+//Tabs
+itemGroup.funblocks=Fun Blocks
+itemGroup.funtools=Fun Tools
+itemGroup.funitems=Fun Items
 
+//Useable
+item.ruby_phone.name=Ruby Phone
 

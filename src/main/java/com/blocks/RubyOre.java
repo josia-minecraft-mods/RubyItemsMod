@@ -11,9 +11,9 @@ import java.util.Random;
 
 public class RubyOre extends BlockBase {
 
-    public RubyOre(String name, Material material)
+    public RubyOre(String name)
     {
-        super(name, material);
+        super(name);
         setSoundType(SoundType.METAL);
         setHardness(5.0F);
         setResistance(15.0F);

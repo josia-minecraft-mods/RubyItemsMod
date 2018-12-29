@@ -1,0 +1,8 @@
+{
+  "items.phone":
+  {
+    "category": "items",
+    "subtitle": "items.phone",
+    "sounds": [{"name": "jm:items/phone", "stream": true}]
+  }
+}

@@ -2,12 +2,13 @@ package com.init;
 
 import com.items.ItemBase;
 import com.items.armor.ArmorBase;
+import com.items.item.Phone;
+import com.items.item.Ruby;
 import com.items.tools.*;
 import com.util.Reference;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.*;
-import net.minecraft.util.SoundEvent;
 import net.minecraftforge.common.util.EnumHelper;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class ModItems
             new int[] {2, 7, 5, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
 
     //Items
-    public static final Item RUBY = new ItemBase("ruby");
+    public static final Item RUBY = new Ruby("ruby");
 
     //Tools
     public static final ItemSword RUBY_SWORD = new ToolSword("ruby_sword", MATERIAL_RUBY);
@@ -38,6 +39,8 @@ public class ModItems
     public static final Item RUBY_LEGGINGS = new ArmorBase("ruby_leggings", ARMOR_MATERIAL_RUBY, 2, EntityEquipmentSlot.LEGS);
     public static final Item RUBY_BOOTS = new ArmorBase("ruby_boots", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET);
 
+    //Usable
+    public static final Item PHONE = new Phone("ruby_phone");
 
 }
 
