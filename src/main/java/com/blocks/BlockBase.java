@@ -7,7 +7,6 @@ import com.tabs.FunTabs;
 import com.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
@@ -15,7 +14,7 @@ public class BlockBase extends Block implements IHasModel
 {
     public BlockBase(String name)
     {
-        super(Material.ROCK);
+        super(Material.GROUND);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(FunTabs.funblocks);
