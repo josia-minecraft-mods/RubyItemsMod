@@ -1,8 +1,21 @@
 {
-  "items.phone": {
+  "phone.phone": {
     "category": "master",
-    "subtitle": "items.phone",
-    "sounds": [{"name": "rubymod:items/phone", "stream": false},{"name": "rubymod:items/hello", "stream": false}]
+    "subtitle": "phone.phone",
+    "sounds": [
+      {
+        "name": "rubymod:phone/phone",
+        "stream": false
+      },
+      {
+        "name": "rubymod:phone/hello",
+        "stream": false
+      },
+      {
+        "name": "rubymod:phone/cantreach",
+        "stream": false
+      }
+    ]
   }
 }
 

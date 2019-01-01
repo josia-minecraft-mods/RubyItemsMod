@@ -8,12 +8,13 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class SoundsHandler
 {
 
-    public static SoundEvent PHONE,HELLO;
+    public static SoundEvent PHONE,HELLO,NOREACH;
 
     public static void registerSounds()
     {
-        PHONE = registerSound("items.phone");
-        HELLO = registerSound("items.hello");
+        PHONE = registerSound("phone.phone");
+        HELLO = registerSound("phone.hello");
+        NOREACH = registerSound("phone.cantreach");
     }
 
     private  static SoundEvent registerSound(String name)
