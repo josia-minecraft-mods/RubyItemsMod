@@ -2,9 +2,8 @@ package com.items.tools;
 
 import com.Main;
 import com.init.ModItems;
-import com.tabs.FunTabs;
+import com.tabs.RubyTabs;
 import com.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemHoe;
 
@@ -15,7 +14,7 @@ public class ToolHoe extends ItemHoe implements IHasModel
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(FunTabs.funtools);
+        setCreativeTab(RubyTabs.rubytools);
 
         ModItems.ITEMS.add(this);
     }

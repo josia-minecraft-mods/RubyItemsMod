@@ -2,6 +2,7 @@ package com.blocks;
 
 
 import com.init.ModItems;
+import com.tabs.RubyTabs;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -11,13 +12,14 @@ import java.util.Random;
 
 public class RubyOre extends BlockBase {
 
-    public RubyOre(String name)
+    public RubyOre(String name, Material material)
     {
-        super(name);
+        super(name, material);
         setSoundType(SoundType.METAL);
         setHardness(5.0F);
         setResistance(15.0F);
         setHarvestLevel("pickaxe", 2);
+        setCreativeTab(RubyTabs.rubyblocks);
     }
 
     @Override

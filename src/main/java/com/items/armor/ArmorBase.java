@@ -2,12 +2,11 @@ package com.items.armor;
 
 import com.Main;
 import com.init.ModItems;
+import com.tabs.RubyTabs;
 import com.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 
-import javax.xml.stream.events.EntityDeclaration;
 
 public class ArmorBase extends ItemArmor implements IHasModel
 {
@@ -16,7 +15,7 @@ public class ArmorBase extends ItemArmor implements IHasModel
         super(material, renderIndex, equipmentSlot);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(RubyTabs.rubyarmor);
 
         ModItems.ITEMS.add(this);
     }

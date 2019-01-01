@@ -1,0 +1,8 @@
+{
+  "items.phone": {
+    "category": "master",
+    "subtitle": "items.phone",
+    "sounds": [{"name": "rubymod:items/phone", "stream": false},{"name": "rubymod:items/hello", "stream": false}]
+  }
+}
+

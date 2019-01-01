@@ -1,6 +1,5 @@
 package com.init;
 
-import com.items.ItemBase;
 import com.items.armor.ArmorBase;
 import com.items.item.Phone;
 import com.items.item.Ruby;
@@ -39,8 +38,8 @@ public class ModItems
     public static final Item RUBY_LEGGINGS = new ArmorBase("ruby_leggings", ARMOR_MATERIAL_RUBY, 2, EntityEquipmentSlot.LEGS);
     public static final Item RUBY_BOOTS = new ArmorBase("ruby_boots", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET);
 
-    //Usable
-    public static final Item PHONE = new Phone("ruby_phone");
+    //Misc
+    public static final Item RUBY_PHONE = new Phone("ruby_phone");
 
 }
 

@@ -2,7 +2,7 @@ package com.items.item;
 
 import com.Main;
 import com.init.ModItems;
-import com.tabs.FunTabs;
+import com.tabs.RubyTabs;
 import com.util.IHasModel;
 import net.minecraft.item.Item;
 
@@ -11,7 +11,7 @@ public class Ruby extends Item implements IHasModel {
     {
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(FunTabs.funitems);
+        setCreativeTab(RubyTabs.rubyitems);
 
         ModItems.ITEMS.add(this);
     }

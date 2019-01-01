@@ -2,9 +2,8 @@ package com.items.tools;
 
 import com.Main;
 import com.init.ModItems;
-import com.tabs.FunTabs;
+import com.tabs.RubyTabs;
 import com.util.IHasModel;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
 
 
@@ -15,7 +14,7 @@ public class ToolAxe extends ItemAxe implements IHasModel
         super(material, 6.0F, -3.2F);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(FunTabs.funtools);
+        setCreativeTab(RubyTabs.rubytools);
 
         ModItems.ITEMS.add(this);
     }

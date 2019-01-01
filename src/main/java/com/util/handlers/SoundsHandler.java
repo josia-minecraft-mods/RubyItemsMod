@@ -8,11 +8,12 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class SoundsHandler
 {
 
-    public static SoundEvent PHONE;
+    public static SoundEvent PHONE,HELLO;
 
     public static void registerSounds()
     {
         PHONE = registerSound("items.phone");
+        HELLO = registerSound("items.hello");
     }
 
     private  static SoundEvent registerSound(String name)
