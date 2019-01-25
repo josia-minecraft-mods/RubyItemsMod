@@ -1,6 +1,5 @@
 package com.util.handlers;
 
-import com.init.EntityInit;
 import com.init.ModBlocks;
 import com.init.ModItems;
 import com.util.IHasModel;
@@ -48,7 +47,6 @@ public class RegistryHandler
 
     public static void preInitRegistries()
     {
-        EntityInit.registerentities();
         RenderHandler.registerEntitysRenders();
     }
 

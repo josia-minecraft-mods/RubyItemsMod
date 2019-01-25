@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "RRR",
+    "RTR",
+    "RRR"
+  ],
+
+  "key":
+  {
+    "R":
+    {
+      "item": "minecraft:redstone"
+    },
+    "T":
+    {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+
+  "result":
+  {
+    "item": "rubymod:circuit",
+    "count": 1
+  }
+}

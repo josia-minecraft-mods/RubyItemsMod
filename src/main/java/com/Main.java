@@ -4,6 +4,7 @@ import com.init.ModRecipes;
 import com.util.Reference;
 import com.proxy.CommonProxy;
 import com.util.handlers.RegistryHandler;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -22,7 +23,6 @@ public class Main
 
     @SidedProxy(clientSide = Reference.CLIENTPROXY, serverSide = Reference.COMMONPROXY)
     public static CommonProxy proxy;
-
     public static Logger logger;
 
     @Mod.EventHandler

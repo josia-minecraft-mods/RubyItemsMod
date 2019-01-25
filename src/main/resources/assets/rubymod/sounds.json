@@ -8,11 +8,11 @@
         "stream": false
       },
       {
-        "name": "rubymod:phone/hello",
+        "name": "rubymod:phone/cantreach",
         "stream": false
       },
       {
-        "name": "rubymod:phone/cantreach",
+        "name": "rubymod:phone/hello",
         "stream": false
       }
     ]

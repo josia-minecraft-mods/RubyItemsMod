@@ -1,6 +1,7 @@
 package com.init;
 
 import com.items.armor.ArmorBase;
+import com.items.item.Circuit;
 import com.items.item.Phone;
 import com.items.item.Ruby;
 import com.items.tools.*;
@@ -39,6 +40,7 @@ public class ModItems
     public static final Item RUBY_BOOTS = new ArmorBase("ruby_boots", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET);
 
     //Misc
+    public static final Item CIRCUIT = new Circuit("circuit");
     public static final Item RUBY_PHONE = new Phone("ruby_phone");
 
 }

@@ -1,0 +1,31 @@
+//Items
+item.ruby.name=Rode Ruby
+
+//Blocks
+tile.ruby_block.name=Ruby Blok
+tile.ruby_ore.name=Ruby SteenErts
+
+//Tools
+item.ruby_sword.name=Ruby Zwaard
+item.ruby_shovel.name=Ruby Schep
+item.ruby_pickaxe.name=Ruby HakBijl
+item.ruby_axe.name=Ruby Bijl
+item.ruby_hoe.name=Ruby Omploeger
+
+//Armor
+item.ruby_helmet.name=Ruby Helm
+item.ruby_chestplate.name=Ruby BorstPlaat
+item.ruby_leggings.name=Ruby Broek
+item.ruby_boots.name=Ruby Schoenen
+
+//Tabs
+itemGroup.rubyblocks=Ruby Blokken
+itemGroup.rubytools=Ruby hulpmiddelen
+itemGroup.rubyitems=Ruby Voorwerpen
+itemGroup.rubyarmor=Ruby Bescherming
+itemGroup.rubygadgets=Ruby Misc
+
+//Misc
+item.ruby_phone.name=Ruby Telefoon
+item.circuit.name=Circuit
+

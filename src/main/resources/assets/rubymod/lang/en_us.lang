@@ -27,4 +27,5 @@ itemGroup.rubygadgets=Ruby Misc
 
 //Misc
 item.ruby_phone.name=Ruby Phone
+item.circuit.name=Circuit
 

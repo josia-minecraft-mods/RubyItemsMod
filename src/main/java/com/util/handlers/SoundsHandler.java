@@ -13,8 +13,8 @@ public class SoundsHandler
     public static void registerSounds()
     {
         PHONE = registerSound("phone.phone");
-        HELLO = registerSound("phone.hello");
         NOREACH = registerSound("phone.cantreach");
+        HELLO = registerSound("phone.hello");
     }
 
     private  static SoundEvent registerSound(String name)
