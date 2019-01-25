@@ -12,7 +12,7 @@ public class ToolHoe extends ItemHoe implements IHasModel
     public ToolHoe(String name, Item.ToolMaterial material)
     {
         super(material);
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(RubyTabs.rubytools);
 

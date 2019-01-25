@@ -12,7 +12,7 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel
     public ToolPickaxe(String name, Item.ToolMaterial material)
     {
         super(material);
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(RubyTabs.rubytools);
 

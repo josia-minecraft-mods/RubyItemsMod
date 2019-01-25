@@ -10,7 +10,7 @@ public class Circuit extends Item implements IHasModel {
 
     public Circuit(String name)
     {
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(RubyTabs.rubygadgets);
 

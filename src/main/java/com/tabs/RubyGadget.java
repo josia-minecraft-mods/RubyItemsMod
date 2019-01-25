@@ -14,7 +14,7 @@ public class RubyGadget extends CreativeTabs
         }
 
         @Override
-        public ItemStack getTabIconItem()
+        public ItemStack createIcon()
         {
             return new ItemStack(ModItems.RUBY_PHONE);
         }

@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 public class Ruby extends Item implements IHasModel {
     public Ruby(String name)
     {
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(RubyTabs.rubyitems);
 

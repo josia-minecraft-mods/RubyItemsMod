@@ -12,7 +12,7 @@ public class ToolAxe extends ItemAxe implements IHasModel
     public ToolAxe(String name, ToolMaterial material)
     {
         super(material, 6.0F, -3.2F);
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(RubyTabs.rubytools);
 

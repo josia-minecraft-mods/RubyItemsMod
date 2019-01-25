@@ -14,8 +14,8 @@ public class RubyBlocks extends CreativeTabs
     }
 
     @Override
-    public ItemStack getTabIconItem()
-    {
+    public ItemStack createIcon() {
         return new ItemStack(ModBlocks.RUBY_BLOCK);
     }
+
 }

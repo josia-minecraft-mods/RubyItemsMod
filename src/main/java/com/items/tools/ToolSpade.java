@@ -12,7 +12,7 @@ public class ToolSpade extends ItemSpade implements IHasModel
     public ToolSpade(String name, Item.ToolMaterial material)
     {
         super(material);
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(RubyTabs.rubytools);
 

@@ -11,7 +11,7 @@ public class ToolSword extends ItemSword implements IHasModel {
         public ToolSword(String name, ToolMaterial material)
         {
             super(material);
-            setUnlocalizedName(name);
+            setTranslationKey(name);
             setRegistryName(name);
             setCreativeTab(RubyTabs.rubytools);
 

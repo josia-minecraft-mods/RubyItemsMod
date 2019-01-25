@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "0.0.1"
+version = "0.1.0"
 group = "com" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "rubymod"
 
@@ -23,7 +23,8 @@ minecraft {
     runDir = "run"
     
 
-    mappings = "snapshot_20171003"
+   // mappings = "snapshot_20171003"
+    mappings = "stable_39"
 }
 
 dependencies {

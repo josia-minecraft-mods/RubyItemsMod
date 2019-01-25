@@ -4,18 +4,14 @@ import com.Main;
 import com.init.ModItems;
 import com.tabs.RubyTabs;
 import com.util.IHasModel;
-import com.util.Reference;
 import com.util.handlers.SoundsHandler;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.*;
@@ -29,7 +25,7 @@ public class Phone extends Item implements IHasModel {
 
 
     public Phone(String name) {
-        setUnlocalizedName(name);
+        setTranslationKey(name);
         setRegistryName(name);
         setMaxStackSize(1);
         setCreativeTab(RubyTabs.rubygadgets);
