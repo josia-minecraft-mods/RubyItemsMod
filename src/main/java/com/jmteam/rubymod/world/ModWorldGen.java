@@ -1,6 +1,6 @@
 package com.jmteam.rubymod.world;
 
-import com.jmteam.rubymod.init.ModBlocks;
+import com.jmteam.rubymod.common.init.RMBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -24,7 +24,7 @@ public class ModWorldGen implements IWorldGenerator
 
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkprovider)
     {
-        generateOre(ModBlocks.RUBY_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 16,64, random.nextInt(7) + 4, 9);
+        generateOre(RMBlocks.RUBY_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 16,64, random.nextInt(7) + 4, 9);
     }
 
     private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances)

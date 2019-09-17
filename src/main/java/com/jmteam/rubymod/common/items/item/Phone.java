@@ -1,9 +1,7 @@
 package com.jmteam.rubymod.common.items.item;
 
-import com.jmteam.rubymod.Main;
-import com.jmteam.rubymod.init.ModItems;
-import com.jmteam.rubymod.tabs.RubyTabs;
-import com.jmteam.rubymod.util.IHasModel;
+import com.jmteam.rubymod.common.init.RMItems;
+import com.jmteam.rubymod.common.tabs.RubyTabs;
 import com.jmteam.rubymod.util.handlers.SoundsHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
@@ -14,23 +12,21 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.*;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
 
-public class Phone extends Item implements IHasModel {
+public class Phone extends Item {
 
 
-    public Phone(String name) {
-        setTranslationKey(name);
-        setRegistryName(name);
+    public Phone() {
         setMaxStackSize(1);
         setCreativeTab(RubyTabs.rubygadgets);
-
-        ModItems.ITEMS.add(this);
     }
 
     @Override
@@ -41,7 +37,7 @@ public class Phone extends Item implements IHasModel {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        if (worldIn.isRemote) {
+   /*     if (worldIn.isRemote) {
             ItemStack stack = playerIn.getHeldItem(handIn);
             NBTTagCompound nbt = stack.getTagCompound();
             if (nbt == null) {
@@ -58,7 +54,7 @@ public class Phone extends Item implements IHasModel {
                     }
                 }
             } else {
-                if (stack.getItem() == ModItems.RUBY_PHONE && playerIn.isSneaking()) {
+                if (stack.getItem() == RMItems.RUBY_PHONE && playerIn.isSneaking()) {
                     if (playerIn.inventory.armorInventory.get(EntityEquipmentSlot.HEAD.getIndex()).isEmpty()) {
                         playerIn.inventory.armorInventory.set(EntityEquipmentSlot.HEAD.getIndex(), PhoneOnHead());
                         Minecraft.getMinecraft().getSoundHandler().stopSounds();
@@ -71,13 +67,13 @@ public class Phone extends Item implements IHasModel {
             System.out.println(nbt.getInteger("use"));
             stack.setTagCompound(nbt);
         }
-
+*/
         return new ActionResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 
 
-    private static ItemStack PhoneOnHead() {
-        ItemStack stack = new ItemStack(ModItems.RUBY_PHONE);
+  /*  private static ItemStack PhoneOnHead() {
+        ItemStack stack = new ItemStack(RMItems.RUBY_PHONE);
 
         NBTTagCompound nbt;
         nbt = new NBTTagCompound();
@@ -87,7 +83,7 @@ public class Phone extends Item implements IHasModel {
     }
 
     private static ItemStack PhoneBack() {
-        ItemStack stack = new ItemStack(ModItems.RUBY_PHONE);
+        ItemStack stack = new ItemStack(RMItems.RUBY_PHONE);
 
         NBTTagCompound nbt;
         nbt = new NBTTagCompound();
@@ -113,14 +109,9 @@ public class Phone extends Item implements IHasModel {
             stack.setTagCompound(new NBTTagCompound());
             stack.getTagCompound().setInteger("use", 0);
         }
-        if (player.inventory.armorInventory.get(EntityEquipmentSlot.HEAD.getIndex()).isEmpty() && stack.getItem() == ModItems.RUBY_PHONE && !(stack.getTagCompound().getInteger("use") == 1)) {
+        if (player.inventory.armorInventory.get(EntityEquipmentSlot.HEAD.getIndex()).isEmpty() && stack.getItem() == RMItems.RUBY_PHONE && !(stack.getTagCompound().getInteger("use") == 1)) {
             stack.getTagCompound().setInteger("use", 3);
             Minecraft.getMinecraft().getSoundHandler().stopSounds();
         }
-    }
-
-    @Override
-    public void registerModels() {
-        Main.proxy.registerItemRenderer(this, 0, "inventory");
-    }
+    }*/
 }

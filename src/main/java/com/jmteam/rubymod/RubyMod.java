@@ -1,8 +1,7 @@
 package com.jmteam.rubymod;
 
-import com.jmteam.rubymod.init.ModItems;
-import com.jmteam.rubymod.init.ModRecipes;
-import com.jmteam.rubymod.util.Reference;
+import com.jmteam.rubymod.common.init.RMItems;
+import com.jmteam.rubymod.common.init.RubyRecipes;
 import com.jmteam.rubymod.proxy.CommonProxy;
 import com.jmteam.rubymod.util.handlers.RegistryHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -15,28 +14,33 @@ import net.minecraftforge.oredict.OreDictionary;
 import org.apache.logging.log4j.Logger;
 import com.jmteam.rubymod.world.ModWorldGen;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
+@Mod(modid = RubyMod.MODID, name = RubyMod.NAME, version = RubyMod.VERSION)
 
-public class Main
+public class RubyMod
 {
     @Mod.Instance
-    public static Main instance;
+    public static RubyMod instance;
 
-    @SidedProxy(clientSide = Reference.CLIENTPROXY, serverSide = Reference.COMMONPROXY)
+    public static final String NAME = "RMItems Mod";
+    public static final String VERSION = "0.0.5";
+    public static final String MODID = "rubymod";
+
+    @SidedProxy(clientSide = "com.jmteam.rubymod.proxy.ClientProxy", serverSide = "com.jmteam.rubymod.proxy.CommonProxy")
     public static CommonProxy proxy;
     public static Logger logger;
 
     @Mod.EventHandler
     public static void PreInit(FMLPreInitializationEvent event)
     {
+        logger = event.getModLog();
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
-        OreDictionary.registerOre("ruby", ModItems.RUBY);
+        OreDictionary.registerOre("ruby", RMItems.RUBY);
     }
 
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent event)
     {
-        ModRecipes.init();
+        RubyRecipes.init();
         RegistryHandler.initRegistries();
     }
 
