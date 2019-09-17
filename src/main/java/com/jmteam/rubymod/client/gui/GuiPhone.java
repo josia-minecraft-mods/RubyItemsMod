@@ -1,6 +1,6 @@
 package com.jmteam.rubymod.client.gui;
 
-import com.jmteam.rubymod.util.Reference;
+import com.jmteam.rubymod.RubyMod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class GuiPhone extends GuiScreen {
 
-    final ResourceLocation texture = new ResourceLocation(Reference.MODID, "textures/gui/phone.png");
+    final ResourceLocation texture = new ResourceLocation(RubyMod.MODID, "textures/gui/phone.png");
    int guiWidth = 175;
    int guiHeight = 228;
 
