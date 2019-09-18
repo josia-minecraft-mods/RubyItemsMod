@@ -3,7 +3,7 @@ package com.jmteam.rubymod.common.init;
 import com.jmteam.rubymod.RubyMod;
 import com.jmteam.rubymod.common.items.ItemBase;
 import com.jmteam.rubymod.common.items.armor.ArmorBase;
-import com.jmteam.rubymod.common.items.item.Phone;
+import com.jmteam.rubymod.common.items.item.ItemCrescentRose;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -45,7 +45,8 @@ public class RMItems {
 
     //Misc
     public static final Item CIRCUIT = registerItem(new ItemBase(), "circuit");
-//    public static final Item RUBY_PHONE = registerItem(new Phone(), "ruby_phone");
+//    public static final Item RUBY_PHONE = registerItem(new ItemPhone(), "ruby_phone");
+    public static final Item CRESCENT_ROSE = registerItem(new ItemCrescentRose(), "crescent_rose");
 
     public static void registerRenders() {
         ITEMS.forEach(i -> {

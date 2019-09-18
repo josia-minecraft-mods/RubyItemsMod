@@ -21,10 +21,10 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 
-public class Phone extends Item {
+public class ItemPhone extends Item {
 
 
-    public Phone() {
+    public ItemPhone() {
         setMaxStackSize(1);
         setCreativeTab(RubyTabs.rubygadgets);
     }
@@ -94,7 +94,7 @@ public class Phone extends Item {
 
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-        tooltip.add("§eWIP Phone");
+        tooltip.add("§eWIP ItemPhone");
         tooltip.add("§cShift + Right Click");
         tooltip.add("§cRight Click");
         super.addInformation(stack, worldIn, tooltip, flagIn);
