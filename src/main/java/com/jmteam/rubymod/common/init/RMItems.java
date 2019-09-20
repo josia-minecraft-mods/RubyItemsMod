@@ -2,8 +2,8 @@ package com.jmteam.rubymod.common.init;
 
 import com.jmteam.rubymod.RubyMod;
 import com.jmteam.rubymod.common.items.ItemBase;
-import com.jmteam.rubymod.common.items.armor.ArmorBase;
-import com.jmteam.rubymod.common.items.item.ItemCrescentRose;
+import com.jmteam.rubymod.common.items.ItemArmorBase;
+import com.jmteam.rubymod.common.items.ItemCrescentRose;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -38,10 +38,10 @@ public class RMItems {
     public static final ItemPickaxe RUBY_PICKAXE = new ToolPickaxe("ruby_pickaxe", MATERIAL_RUBY);*/
 
     //Armor
-    public static final Item RUBY_HELMET = registerItem(new ArmorBase(ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.HEAD), "ruby_helmet");
-    public static final Item RUBY_CHESTPLATE = registerItem(new ArmorBase(ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.CHEST),"ruby_chestplate");
-    public static final Item RUBY_LEGGINGS = registerItem(new ArmorBase(ARMOR_MATERIAL_RUBY, 2, EntityEquipmentSlot.LEGS), "ruby_leggings");
-    public static final Item RUBY_BOOTS = registerItem(new ArmorBase(ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET), "ruby_boots");
+    public static final Item RUBY_HELMET = registerItem(new ItemArmorBase(ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.HEAD), "ruby_helmet");
+    public static final Item RUBY_CHESTPLATE = registerItem(new ItemArmorBase(ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.CHEST),"ruby_chestplate");
+    public static final Item RUBY_LEGGINGS = registerItem(new ItemArmorBase(ARMOR_MATERIAL_RUBY, 2, EntityEquipmentSlot.LEGS), "ruby_leggings");
+    public static final Item RUBY_BOOTS = registerItem(new ItemArmorBase(ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET), "ruby_boots");
 
     //Misc
     public static final Item CIRCUIT = registerItem(new ItemBase(), "circuit");

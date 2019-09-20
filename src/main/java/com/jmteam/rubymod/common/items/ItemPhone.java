@@ -1,4 +1,4 @@
-package com.jmteam.rubymod.common.items.item;
+package com.jmteam.rubymod.common.items;
 
 import com.jmteam.rubymod.common.init.RMItems;
 import com.jmteam.rubymod.common.tabs.RubyTabs;
@@ -26,7 +26,7 @@ public class ItemPhone extends Item {
 
     public ItemPhone() {
         setMaxStackSize(1);
-        setCreativeTab(RubyTabs.rubygadgets);
+        setCreativeTab(RubyTabs.rubyitems);
     }
 
     @Override

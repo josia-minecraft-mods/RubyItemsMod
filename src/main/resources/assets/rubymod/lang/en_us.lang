@@ -11,6 +11,7 @@ item.ruby_shovel.name=Ruby Shovel
 item.ruby_pickaxe.name=Ruby Pickaxe
 item.ruby_axe.name=Ruby Axe
 item.ruby_hoe.name=Ruby Hoe
+item.crescent_rose.name=Crescent Rose
 
 //Armor
 item.ruby_helmet.name=Ruby Helmet

@@ -1,7 +1,9 @@
 package com.jmteam.rubymod;
 
 import com.jmteam.rubymod.common.init.RMItems;
+import com.jmteam.rubymod.common.init.RubyKeybinds;
 import com.jmteam.rubymod.common.init.RubyRecipes;
+import com.jmteam.rubymod.network.NetworkManager;
 import com.jmteam.rubymod.proxy.CommonProxy;
 import com.jmteam.rubymod.util.handlers.RegistryHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -35,6 +37,7 @@ public class RubyMod
         logger = event.getModLog();
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
         OreDictionary.registerOre("ruby", RMItems.RUBY);
+        NetworkManager.init();
     }
 
     @Mod.EventHandler
@@ -42,6 +45,7 @@ public class RubyMod
     {
         RubyRecipes.init();
         RegistryHandler.initRegistries();
+        proxy.init(event);
     }
 
     @Mod.EventHandler
