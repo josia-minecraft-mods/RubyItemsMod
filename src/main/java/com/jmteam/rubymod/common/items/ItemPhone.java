@@ -26,7 +26,6 @@ public class ItemPhone extends Item {
 
     public ItemPhone() {
         setMaxStackSize(1);
-        setCreativeTab(RubyTabs.rubyitems);
     }
 
     @Override
@@ -37,57 +36,41 @@ public class ItemPhone extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-   /*     if (worldIn.isRemote) {
+        if (worldIn.isRemote) {
             ItemStack stack = playerIn.getHeldItem(handIn);
             NBTTagCompound nbt = stack.getTagCompound();
             if (nbt == null) {
                 nbt = new NBTTagCompound();
+                nbt.setInteger("use", 1);
+                stack.setTagCompound(nbt);
             }
-            if (nbt.hasKey("use") && nbt.getInteger("use") == 2) {
-                nbt.setInteger("use", nbt.getInteger("use") + 1);
-                if (nbt.getInteger("use") == 3) {
+            if (nbt.hasKey("use")) {
+                int use = nbt.getInteger("use");
+
+                if (use == 2) {
+                    Minecraft.getMinecraft().getSoundHandler().stopSounds();
                     nbt.setInteger("use", 1);
-                }
-                if (nbt.hasKey("use")) {
-                    if (nbt.getInteger("use") == 1) {
-                        Minecraft.getMinecraft().getSoundHandler().stopSounds();
-                    }
-                }
-            } else {
-                if (stack.getItem() == RMItems.RUBY_PHONE && playerIn.isSneaking()) {
-                    if (playerIn.inventory.armorInventory.get(EntityEquipmentSlot.HEAD.getIndex()).isEmpty()) {
-                        playerIn.inventory.armorInventory.set(EntityEquipmentSlot.HEAD.getIndex(), PhoneOnHead());
-                        Minecraft.getMinecraft().getSoundHandler().stopSounds();
-                        stack.shrink(1);
-                        playerIn.playSound(SoundsHandler.PHONE, 1.0F, 1.0F);
-                    }
                 }
             }
 
-            System.out.println(nbt.getInteger("use"));
-            stack.setTagCompound(nbt);
+            if (playerIn.isSneaking()) {
+                if (playerIn.inventory.armorInventory.get(EntityEquipmentSlot.HEAD.getIndex()).isEmpty()) {
+                    playerIn.inventory.armorInventory.set(EntityEquipmentSlot.HEAD.getIndex(), PhoneOnHead());
+                    Minecraft.getMinecraft().getSoundHandler().stopSounds();
+                    stack.shrink(1);
+                    playerIn.playSound(SoundsHandler.PHONE, 1.0F, 1.0F);
+                }
+            }
         }
-*/
         return new ActionResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 
-
-  /*  private static ItemStack PhoneOnHead() {
+    private static ItemStack PhoneOnHead() {
         ItemStack stack = new ItemStack(RMItems.RUBY_PHONE);
 
         NBTTagCompound nbt;
         nbt = new NBTTagCompound();
         nbt.setInteger("use", 2);
-        stack.setTagCompound(nbt);
-        return stack.copy();
-    }
-
-    private static ItemStack PhoneBack() {
-        ItemStack stack = new ItemStack(RMItems.RUBY_PHONE);
-
-        NBTTagCompound nbt;
-        nbt = new NBTTagCompound();
-        nbt.setInteger("use", 3);
         stack.setTagCompound(nbt);
         return stack.copy();
     }
@@ -103,15 +86,10 @@ public class ItemPhone extends Item {
 
     @Override
     public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
-        EntityPlayer player = (EntityPlayer) entityIn;
 
-        if(stack.getTagCompound() == null) {
+        if (stack.getTagCompound() == null) {
             stack.setTagCompound(new NBTTagCompound());
-            stack.getTagCompound().setInteger("use", 0);
+            stack.getTagCompound().setInteger("use", 1);
         }
-        if (player.inventory.armorInventory.get(EntityEquipmentSlot.HEAD.getIndex()).isEmpty() && stack.getItem() == RMItems.RUBY_PHONE && !(stack.getTagCompound().getInteger("use") == 1)) {
-            stack.getTagCompound().setInteger("use", 3);
-            Minecraft.getMinecraft().getSoundHandler().stopSounds();
-        }
-    }*/
+    }
 }
