@@ -1,6 +1,6 @@
 package com.jmteam.rubymod.common.events;
 
-import com.jmteam.rubymod.common.init.RubyKeybinds;
+import com.jmteam.rubymod.common.init.RMKeybinds;
 import com.jmteam.rubymod.network.NetworkManager;
 import com.jmteam.rubymod.network.packets.PacketSwitchScythe;
 import net.minecraftforge.client.event.InputUpdateEvent;
@@ -14,7 +14,7 @@ public class ClientEventHandler {
     @SubscribeEvent
     public static void onKeyPressed(InputUpdateEvent e) {
 
-        if(RubyKeybinds.SPECIAL.isPressed()) {
+        if(RMKeybinds.SPECIAL.isPressed()) {
             NetworkManager.NETWORK.sendToServer(new PacketSwitchScythe());
         }
     }

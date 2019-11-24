@@ -31,7 +31,6 @@ public class PacketSwitchScythe implements IMessage {
                 EntityPlayerMP player = ctx.getServerHandler().player;
                 ItemStack stack = player.getHeldItem(PlayerUtil.getHandForItem(player, new ItemStack(RMItems.CRESCENT_ROSE)));
 
-                System.out.println(stack.getItem());
                 if (stack.getItem() == RMItems.CRESCENT_ROSE) {
                     if (stack.getTagCompound() == null) {
                         NBTTagCompound nbt = new NBTTagCompound();

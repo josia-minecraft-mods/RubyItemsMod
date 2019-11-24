@@ -1,8 +1,7 @@
 package com.jmteam.rubymod;
 
 import com.jmteam.rubymod.common.init.RMItems;
-import com.jmteam.rubymod.common.init.RubyKeybinds;
-import com.jmteam.rubymod.common.init.RubyRecipes;
+import com.jmteam.rubymod.common.init.RMRecipes;
 import com.jmteam.rubymod.network.NetworkManager;
 import com.jmteam.rubymod.proxy.CommonProxy;
 import com.jmteam.rubymod.util.handlers.RegistryHandler;
@@ -35,6 +34,7 @@ public class RubyMod
     public static void PreInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
+        proxy.preInit(event);
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
         OreDictionary.registerOre("ruby", RMItems.RUBY);
         NetworkManager.init();
@@ -43,7 +43,7 @@ public class RubyMod
     @Mod.EventHandler
     public static void Init(FMLInitializationEvent event)
     {
-        RubyRecipes.init();
+        RMRecipes.init();
         RegistryHandler.initRegistries();
         proxy.init(event);
     }

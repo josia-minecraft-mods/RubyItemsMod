@@ -3,7 +3,7 @@ package com.jmteam.rubymod.common.init;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class RubyRecipes {
+public class RMRecipes {
 
     public static void init()
     {
