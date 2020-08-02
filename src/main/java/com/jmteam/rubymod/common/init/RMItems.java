@@ -4,7 +4,6 @@ import com.jmteam.rubymod.RubyMod;
 import com.jmteam.rubymod.common.items.ItemBase;
 import com.jmteam.rubymod.common.items.ItemArmorBase;
 import com.jmteam.rubymod.common.items.ItemCrescentRose;
-import com.jmteam.rubymod.common.items.ItemPhone;
 import com.jmteam.rubymod.common.tabs.RubyTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
@@ -47,7 +46,6 @@ public class RMItems {
 
     //Misc
     public static final Item CIRCUIT = registerItem(new ItemBase(), "circuit").setCreativeTab(RubyTabs.rubyitems);
-   public static final Item RUBY_PHONE = registerItem(new ItemPhone(), "ruby_phone").setCreativeTab(RubyTabs.rubyitems);
     public static final Item CRESCENT_ROSE = registerItem(new ItemCrescentRose(), "crescent_rose").setCreativeTab(RubyTabs.rubyitems);
 
     public static void registerRenders() {

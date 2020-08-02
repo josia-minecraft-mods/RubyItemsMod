@@ -27,6 +27,5 @@ itemGroup.rubyarmor=Ruby Bescherming
 itemGroup.rubygadgets=Ruby Misc
 
 //Misc
-item.ruby_phone.name=Ruby Telefoon
 item.circuit.name=Circuit
 

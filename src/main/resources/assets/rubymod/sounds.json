@@ -1,18 +1,10 @@
 {
-  "phone.phone": {
+  "bullet": {
     "category": "master",
-    "subtitle": "phone.phone",
+    "subtitle": "ruby:bullet",
     "sounds": [
       {
         "name": "rubymod:phone/phone",
-        "stream": false
-      },
-      {
-        "name": "rubymod:phone/cantreach",
-        "stream": false
-      },
-      {
-        "name": "rubymod:phone/hello",
         "stream": false
       }
     ]

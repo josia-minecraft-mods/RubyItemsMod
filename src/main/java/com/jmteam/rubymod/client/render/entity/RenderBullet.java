@@ -23,6 +23,7 @@ public class RenderBullet extends Render<EntityBullet> {
     public void doRender(EntityBullet entity, double x, double y, double z, float entityYaw, float partialTicks) {
         GlStateManager.pushMatrix();
         GlStateManager.translate(x, y, z);
+        GlStateManager.rotate(entityYaw,0,1,0);
         model.render(entity,0,0,0,0,0, 0.0625f);
         GlStateManager.popMatrix();
     }

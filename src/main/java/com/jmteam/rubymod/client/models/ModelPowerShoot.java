@@ -1,13 +1,17 @@
 package com.jmteam.rubymod.client.models;
 
+import com.jmteam.rubymod.RubyMod;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
 
 public class ModelPowerShoot extends ModelBase {
 
     private final ModelRenderer bone;
+    public static ResourceLocation location = new ResourceLocation(RubyMod.MODID, "textures/items/black.png");
 
     public ModelPowerShoot() {
         textureWidth = 48;
@@ -24,6 +28,7 @@ public class ModelPowerShoot extends ModelBase {
     @Override
     public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
         super.render(entity, f, f1, f2, f3, f4, f5);
+        Minecraft.getMinecraft().getTextureManager().bindTexture(location);
         bone.render(f5);
     }
 
